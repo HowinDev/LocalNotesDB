@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>resources/notes_icon.png</file>
+    </qresource>
+</RCC>
