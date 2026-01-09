@@ -19,11 +19,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     db = QSqlDatabase::addDatabase("QPSQL","main_connection");
-    db.setHostName("192.168.31.81");
+    db.setHostName("");  // <- ip компьютера на котором установлена бд
     db.setPort(5432);
-    db.setDatabaseName("task_manager");
-    db.setUserName("postgres");
-    db.setPassword("2833");
+    db.setDatabaseName("");
+    db.setUserName("");
+    db.setPassword("");
 
     if (!db.open()) {
         qDebug() << "Ошибка подключения:" << db.lastError().text();
